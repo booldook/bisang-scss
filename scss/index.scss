@@ -1,0 +1,18 @@
+@import './common';
+
+.flex-wrap {
+  @include flex($w: wrap);
+  .flex-item {
+    @include border;
+    width: 100%;
+    @include SM {
+      width: 50%;
+    }
+    @include MD {
+      width: 33.3333%;
+    }
+    @include LG {
+      width: 25%;
+    }
+  }
+}

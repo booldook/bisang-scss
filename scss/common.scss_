@@ -1,0 +1,23 @@
+$primary: #A0AECD;
+$secondary: #2568FB;
+$accent: #ABF62D;
+$info: #D6A3FB;
+
+$gutter: .75em;
+
+$titleSize: 10rem;
+
+html {
+  body {
+    h1 {
+      &.title { /* h1.title */
+        color: $primary;
+      }
+      .title { /* h1 .title */
+        color: $secondary;
+        font-size: $titleSize;
+        border: 10px solid $info;
+      }
+    }
+  }
+}
